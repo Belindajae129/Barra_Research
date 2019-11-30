@@ -1,5 +1,5 @@
 # Barra_Research
-1. First build environment for Java, Axis2, and ANT
+## 1. First build environment for Java, Axis2, and ANT
 
 env | grep HOME
 
@@ -9,7 +9,7 @@ JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home
 
 HOME=/Users/belindajae
 
-2. Make a working directory
+## 2. Make a working directory
 mkdir bdti
 cd bdti/
 
@@ -51,7 +51,7 @@ ls
 /opt/axis2/bin/axis2.sh 
 ls -l build/lib/
 
-Java codes should be saved in src
+## 3. Java codes should be saved in src
 /opt/ant/bin/ant
 Compile the java scripts
 /opt/axis2/bin/axis2.sh -cp ~/bdti/build/lib/BDTService.aar:~/bdti/build/lib/XBeans-packaged.jar Example2
