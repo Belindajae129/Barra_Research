@@ -1,0 +1,13 @@
+login to https://cloud.rcc.uchicago.edu/risklab/user/chenc129/tree/risklab
+
+1. create github key
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub
+ssh -T git@github.om
+
+2. mkdir risklab
+cd risklab/
+git clone git@github.com:xiubooth/DataHub.git
+
+3. github certificate is saved in the following dir
+vi ~/.ssh/
