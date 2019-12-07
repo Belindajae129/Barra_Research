@@ -13,34 +13,35 @@ HOME=/Users/belindajae
 mkdir bdti
 cd bdti/
 
-Download the BDT xml from the website and move it to the working directory
+# Download the BDT xml from the website and move it to the working directory
 mv ~/Downloads/BDTService.xml bdt.wsdl
 
 vi bdt.wsdl
+# Note in this step: First Google "Barra wsdl", then copy it to our bst.wsdl file
 
 /opt/axis2/bin/wsdl2java.sh -uri bdt.wsdl -d xmlbeans -ss -g -p com.barra.cp.bdtbeans -o ./
 
 ls -l
 
-All the java scripts are saved in the following dir:
+# All the java scripts are saved in the following dir:
 ll src/com/barra/cp/bdtbeans/
 
 ll src/com/barra/cp/bdtbeans/
 
 ls
-There are four files as below:
+# There are four files as below:
 bdt.wsdl	build.xml	resources	src
 
 sudo mv ~/Downloads/apache-ant-1.9.14 /opt/ant
 
-After building successfully:
+#After building successfully:
 ls
-There are five files as below:
+#There are five files as below:
 bdt.wsdl	build		build.xml	resources src
 
 cd src/
 ls
-There are two files:
+#There are two files:
 com	org
 
 cd ..
@@ -53,9 +54,9 @@ ls -l build/lib/
 
 ## 3. Java codes should be saved in src
 /opt/ant/bin/ant
-Compile the java scripts
+# Compile the java scripts
 /opt/axis2/bin/axis2.sh -cp ~/bdti/build/lib/BDTService.aar:~/bdti/build/lib/XBeans-packaged.jar Example2
-Use axis to run the job
+# Use axis to run the job
 
 
 
